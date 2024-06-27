@@ -60,13 +60,13 @@ const BookmarkTable: React.FC<BookmarkTableProps> = ({mapRef, bookmarks, setBook
                                     <TableCell>{x.long.toFixed(2)}</TableCell>
                                     <TableCell>{x.lat.toFixed(2)}</TableCell>
                                     <TableCell>
-                                        <Button>
-                                            <ArrowRight onClick={() => handleVisit(x)} className="w-4"></ArrowRight>
+                                        <Button onClick={() => handleVisit(x)}>
+                                            <ArrowRight className="w-4"></ArrowRight>
                                         </Button>
                                     </TableCell>
                                     <TableCell>
-                                        <Button>
-                                            <X onClick={() => handleDelete(x)} className="w-4"></X>
+                                        <Button onClick={() => handleDelete(x)}>
+                                            <X className="w-4"></X>
                                         </Button>
                                     </TableCell>
                                 </TableRow>
