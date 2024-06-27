@@ -33,3 +33,11 @@ cd your_project/
 
 # Install dependencies
 npm install
+```
+
+## Running
+
+```bash
+# Run app in browser
+npm run dev
+```
