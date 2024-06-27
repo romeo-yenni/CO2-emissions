@@ -34,12 +34,7 @@ const Map: React.FC<MapProps> = ({year, mapRef, setCoords, setToggleBookmarkInfo
 
     const loadGeoJSON = async () => {
       const geojson = await ProcData();
-      const existingSource = map.getSource('co2') as any;
 
-      if (existingSource) {
-        existingSource.setData(geojson);
-      } 
-      else {
         map.addSource('co2', {
           type: 'geojson',
           data: geojson,
@@ -61,7 +56,6 @@ const Map: React.FC<MapProps> = ({year, mapRef, setCoords, setToggleBookmarkInfo
           },
         });
       }
-    };
 
     map.on('load', loadGeoJSON)
 
