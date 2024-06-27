@@ -49,7 +49,8 @@ const Map: React.FC<MapProps> = ({year, mapRef, setCoords, setToggleBookmarkInfo
               'interpolate',
               ['exponential', 0.997],
               ["to-number", ["get", `${year[0]}`]],
-              0, '#00FF00', 
+              0, '#00FF00',
+              500, '#FFA500',
               11500, '#FF0000',
             ],
             'fill-opacity': 0.6,
@@ -60,8 +61,8 @@ const Map: React.FC<MapProps> = ({year, mapRef, setCoords, setToggleBookmarkInfo
     map.on('load', loadGeoJSON)
 
     return () => {
-      map.off('load', loadGeoJSON);
       if (map) {
+        map.off('load', loadGeoJSON);
         map.remove()
       }
     };

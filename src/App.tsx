@@ -45,7 +45,7 @@ const App: React.FC = () => {
       <div className='absolute z-5 flex items-center justify-center w-full top-10'>
         <div className='bg-slate-700 w-[350px] h-[70px] rounded-3xl flex flex-col justify-evenly items-center'>
           <p className='text-white font-bold'>CO2 Emmissions in: {year}</p>
-          <Slider className='w-[300px]' defaultValue={[2021]} onValueChange={handleYearChange} value={year} min={1960} max={2021} step={1}  />
+          <Slider className='w-[300px]' defaultValue={[2021]} onValueCommit={handleYearChange} min={1960} max={2021} step={1}  />
         </div>
       </div>
     </>
