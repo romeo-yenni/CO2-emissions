@@ -31,7 +31,7 @@ A map application the shows CO2 produced by nations by year (colour coded). User
 git clone https://github.com/romeo-yenni/CO2-emissions.git
 
 # Navigate into the directory
-cd your_project/
+cd CO2-emissions/
 
 # Install dependencies
 npm install
@@ -42,4 +42,7 @@ npm install
 ```bash
 # Run app in browser
 npm run dev
+
+# Open app in browser
+http://localhost:5173/
 ```
